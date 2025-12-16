@@ -51,10 +51,5 @@ app.use("/api/community", communityRoutes);
 app.listen(port, () => {    
     console.log(`Server is running on http://localhost:${port}`);   
     connectDB();
-    // Verify email transport (logs result) — helpful to surface config issues early
-    verifyTransport().then(ok => {
-      if (!ok) {
-        console.warn('Email transport NOT configured correctly. OTP emails will fail.');
-      }
-    });
+
 });
