@@ -3,7 +3,7 @@ import cors from 'cors';
 import dotenv from 'dotenv';
 dotenv.config();
 import authRoutes from './routes/auth.route.js';
-import { verifyTransport } from './utils/email.js';
+
 import purchaseRoutes from './routes/purchase.route.js';
 import announcementRoutes from './routes/announcement.route.js';
 import paymentRoutes from './routes/payment.route.js';
